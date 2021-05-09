@@ -1,6 +1,6 @@
 package br.com.stackx.projectWeb.model;
 
-public class Estado {
+public class Estado implements Serializable {
 	
 	protected int idEstado;
 	protected String nome;

@@ -1,17 +1,17 @@
 package br.com.stackx.projectWeb.exception;
 
 
-public class StackxException extends Exception {
+public class StackXException extends Exception {
 
 	private String mensagem;
 	private Exception exception;
 	
-	public StackxException() {
+	public StackXException() {
 		this(null, null);
 	}
 	
 	
-	public StackxException(String mensagem, Exception exception) {
+	public StackXException(String mensagem, Exception exception) {
 		super();
 		this.mensagem = mensagem;
 		this.exception = exception;

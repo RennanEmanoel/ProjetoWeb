@@ -8,7 +8,7 @@
 
 ​		Date: 05/21
 
-​		Version: 1.0
+​		Version: 2.0
 
 ​		Situation: In progress
 
@@ -20,10 +20,10 @@
 
 ### :crossed_swords: Tecnologias		
 
-|      Java      |     MySQL     |   Maven    |
-| :------------: | :-----------: | :--------: |
-| **Git/GitHub** |   **HTML**    |  **CSS**   |
-| **JavaScript** | **BootsTrap** | **Jquery** |
+|      Java      |     MySQL     |  Maven  |
+| :------------: | :-----------: | :-----: |
+| **Git/GitHub** |   **HTML**    | **CSS** |
+| **JavaScript** | **BootsTrap** | **JSP** |
 
 
 
@@ -34,6 +34,10 @@
 ​		Mas pretendo estar colocando aqui em poucos dias a versão completa e sem erros, vou continuar esse projeto por um   	
 
 ​		tempo para deixa-lo bem legal e ir sempre atualizando ele aqui.
+
+​        Os erros que ainda se encontram no projeto serão resolvidos em poucos dias, já estou estudando para resolve-los talvez    
+
+​    	refaça o projeto do 0.
 
 ​		*O meu tempo está um pouco corrido mais farei o possível para estar atualizando o projeto, acompanhem.*
 

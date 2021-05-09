@@ -4,7 +4,7 @@ import java.sql.Connection;
 
 import org.apache.commons.dbcp.BasicDataSource;
 
-import br.com.stackx.projectWeb.exception.StackxException;
+import br.com.stackx.projectWeb.exception.StackXException;
 
 
 public class DAO {
@@ -27,13 +27,13 @@ public class DAO {
 		
 	}
 	
-	public static Connection getConnection() throws StackxException {
+	public static Connection getConnection() throws StackXException {
 		try {
 			return basicDataSource.getConnection();
 		} 	
 		catch(Exception exception) {
 			
-			throw new StackxException("Error ao obter conexão", exception);
+			throw new StackXException("Error ao obter conexão", exception);
 			
 		}
 		finally {

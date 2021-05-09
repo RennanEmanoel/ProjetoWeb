@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import br.com.stackx.projectWeb.exception.StackXException;
+
 public class EstadoDAO extends Estado
 {
 	public void insert() throws StackXException {
@@ -95,6 +97,29 @@ public class EstadoDAO extends Estado
 						
 		}
 		catch(Exception exception) {
+			
+		}
+	}
+	public List<Estado> selectAll() throws StackXException
+	{
+		try
+		{
+			Connection connection = new DAO.getConnection();
+			
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT nome, sigla, codigoIBGE FROM Estado WHERE idEstado = ?");
+			
+			ArrayList<Estado> arrayListRetorno = new ArrayList<Estado>();
+			
+			while(ResultSet.next())
+			{
+				Estado estado = new Estado();
+				estado.setIdEstado(resultSet.getInt(1));
+				estado.setNome(resultSet.getString(2));
+				estado.setSigla(resultSet.getString(3));
+				estado.setCodigoIBGE(resultSet.getInt(4));
+				
+				arrayListRetorno.add(estado);
+			}
 			
 		}
 	}
