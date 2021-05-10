@@ -4,7 +4,7 @@
 
 ### :page_facing_up: ​Detalhes 
 
-​		Author: Rennan Emanoel Assunção Trindade
+​		Author: Rennan Emanoel A. Trindade
 
 ​		Date: 05/21
 
@@ -29,15 +29,7 @@
 
 ### :beginner: ​Obs 
 
-​		Este projeto ainda se encontra em andamento, encontrei alguns erros meio do caminho e ainda estou resolvendo eles.
-
-​		Mas pretendo estar colocando aqui em poucos dias a versão completa e sem erros, vou continuar esse projeto por um   	
-
-​		tempo para deixa-lo bem legal e ir sempre atualizando ele aqui.
-
-​        Os erros que ainda se encontram no projeto serão resolvidos em poucos dias, já estou estudando para resolve-los talvez    
-
-​    	refaça o projeto do 0.
+​		Este projeto ainda se encontra em andamento apesar do prazo de entrega, encontrei alguns erros meio do caminho e ainda estou resolvendo eles, pretendo estar colocando aqui em poucos dias a versão completa e sem erros, vou continuar esse projeto por um tempo para deixa-lo bem legal e ir sempre atualizando ele aqui, os erros  se encontram no *pom.xml* e eles serão resolvidos em poucos dias já estou estudando para resolve-los talvez  refaça o projeto do 0.
 
 ​		*O meu tempo está um pouco corrido mais farei o possível para estar atualizando o projeto, acompanhem.*
 

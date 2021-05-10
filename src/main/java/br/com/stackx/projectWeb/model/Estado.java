@@ -2,17 +2,28 @@ package br.com.stackx.projectWeb.model;
 
 public class Estado implements Serializable {
 	
-	protected int idEstado;
+	
+	protected int idEstado;]
+			
+	@NotBlank("O Nome é obrigatório");
+	@Size(min = 1, max = 80);
 	protected String nome;
+	@Size(min = 1, max = 80);
+	@NotBlank("A sigla é obrigatório");
 	protected String sigla;
-	protected int codIbge;
+	
+	@Min(value = 11, message = "O código IBGE deve ser igual ou maior que 11");
+	@Max(value = 53, message ="O código IBGE deve ser igual ou menor que 53");
+	
+	@NotNull
+	protected Integer codIbge;
 	
 	public Estado() {
 		this(0, null, null, 0);
 	}
 	
 	
-	public Estado(int idEstado, String nome, String sigla, int codIbge) {
+	public Estado(int idEstado, String nome, String sigla, Integer codIbge) {
 		super();
 		this.idEstado = idEstado;
 		this.nome = nome;
@@ -39,10 +50,10 @@ public class Estado implements Serializable {
 	public void setSigla(String sigla) {
 		this.sigla = sigla;
 	}
-	public int getCodIbge() {
+	public Integer getCodIbge() {
 		return codIbge;
 	}
-	public void setCodIbge(int codIbge) {
+	public void setCodIbge(Integer codIbge) {
 		this.codIbge = codIbge;
 	}
 	

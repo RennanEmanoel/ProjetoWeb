@@ -12,7 +12,8 @@ public class StackXException extends Exception {
 	
 	
 	public StackXException(String mensagem, Exception exception) {
-		super();
+		
+		super(mensagem, exception);
 		this.mensagem = mensagem;
 		this.exception = exception;
 		

@@ -24,9 +24,14 @@ public class EstadoController {
 	
 	@RequestMapping(value = "/addEstado", method = RequestMethod.POST);
 	
-	public ModelAndView addEstado(@ModelAttribute("SpringWeb") Estado estado) {
+	public String addEstado(@ModelAttribute("SpringWeb") Estado estado, BidingResult result, ModelMap model, HttpsServletRequest request) {
 		
 		try {
+			
+			if(result.hasErrors() || result.hasFieldErrors) {
+				return cadastroEstado(estado, model);
+			}
+			
 			System.out.println("Nome ", estado.getNome());
 			System.out.println("Sigla ", estado.getSigla());
 			System.out.println("Codigo IBGE ", estado.getCodigoIBGE());
@@ -65,8 +70,8 @@ public class EstadoController {
 		}		
 		return new ModelAndView("exibeEstado" "command", estado);
 		
-		@REquestMapping(value = "/ListaEstado", method = RequestMethod.GET);
-		public String listEstado(@ModelAttribute("SpringWeb") Estado estado, ModelMap model, HttpServletRequest) 
+		@RequestMapping(value = "/ListaEstado", method = RequestMethod.GET);
+		public String listEstado(@RequestParam(required = false)  String nomeEstadoParam, @ModelAttribute("SpringWeb") Estado estado, ModelMap model, HttpServletRequest) 
 		{
 			try 
 			{
